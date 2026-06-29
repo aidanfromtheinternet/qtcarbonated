@@ -1,0 +1,23 @@
+# Maintainer: Aidan <notsetupyet@i3x.xyz>
+pkgname=qtcarbonated-shell
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Qt-based shell for Hyprland, designed for usability."
+arch=('any')
+url="https://github.com/aidanfromtheinternet/qtcarbonated"
+license=('MIT')
+depends=(
+    'neovim'
+    'git'
+    'tmux'
+    'htop'
+    'alacritty'
+    'zsh'
+)
+source=('qtc.sh::https://raw.githubusercontent.com/aidanfromtheinternet/qtcarbonated/main/src/mainScript.sh')
+
+sha256sums=('SKIP')
+
+package() {
+    install -Dm755 "${srcdir}/qtc.sh" "${pkgdir}/usr/bin/qtc"
+}

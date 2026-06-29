@@ -1,0 +1,73 @@
+/
++-- etc/nwg-hello/nwg-hello.css
++-- home/$USER
+|   +-- .config
+|   |   +-- cava-bg/config.toml -> $HOME/.config/hypr/cava-bg.toml
+|   |   +-- fresh
+|   |   +-- ghostty
+|   |   |   +-- themes/qtcarbonated -> $HOME/.config/hypr/ghostty
+|   |   |   `-- config.ghostty
+|   |   +-- gtk-3.0
+|   |   |   +-- gtk.css -> $HOME/.config/hypr/gtkFallback/gtk3.css
+|   |   |   `-- settings.ini -> $HOME/.config/hypr/gtkFallback/gtk3.ini
+|   |   +-- gtk-4.0
+|   |   |   +-- gtk.css -> $HOME/.config/hypr/gtkFallback/gtk4.css
+|   |   |   `-- settings.ini -> $HOME/.config/hypr/gtkFallback/gtk4.ini
+|   |   +-- hypr
+|   |   |   +-- gtkFallback
+|   |   |   |   +-- gtk3.css
+|   |   |   |   +-- gtk3.ini
+|   |   |   |   +-- gtk4.css
+|   |   |   |   `-- gtk4.ini
+|   |   |   +-- share
+|   |   |   |   +-- fonts/ -> /usr/share/fonts/
+|   |   |   |   +-- icons/ -> /usr/share/icons/
+|   |   |   |   +-- nwg-hello/ -> /usr/share/nwg-hello/
+|   |   |   |   `-- themes/ -> /usr/share/themes/
+|   |   |   +-- qs/
+|   |   |   +-- cava-bg.toml
+|   |   |   +-- ghostty
+|   |   |   +-- gtk.conf
+|   |   |   +-- hyprland.lua
+|   |   |   +-- hyprpaper.conf
+|   |   |   +-- millennium.css
+|   |   |   +-- nwg-hello.css # sudo cp -af $HOME/.config/hypr/nwg-hello.css /etc/nwg-hello/style.css
+|   |   |   +-- qt.json
+|   |   |   +-- spicetify.ini
+|   |   |   +-- rofi.rasi
+|   |   |   +-- vesktop.css
+|   |   |   `-- wlogout.css
+|   |   +-- millennium
+|   |   |   +-- config.json
+|   |   |   `-- quick.css -> $HOME/.config/hypr/millennium.css
+|   |   +-- qtengine/config.json -> $HOME/.config/hypr/qt.json
+|   |   +-- quickshell -> $HOME/.config/hypr/qs/
+|   |   +-- rofi/config.rasi -> $HOME/.config/hypr/rofi.rasi
+|   |   +-- spicetify
+|   |   |   +-- CustomApps -> /opt/spicetify-cli/CustomApps/
+|   |   |   +-- Extensions -> /opt/spicetify-cli/Extensions/
+|   |   |   +-- Themes -> /opt/spicetify-cli/Themes/
+|   |   |   `-- config-xpui.ini -> $HOME/.config/hypr/spicetify.ini
+|   |   +-- vesktop
+|   |   |   +-- settings
+|   |   |   |   +-- quickCss.css -> $HOME/.config/hypr/vesktop.css
+|   |   |   |   `-- settings.json
+|   |   |   `-- themes/
+|   |   +-- wlogout
+|   |   |   +-- layout
+|   |   |   `-- style.css -> $HOME/.config/hypr/wlogout.css
+|   |   +-- xsettingsd/xsettingsd.conf -> $HOME/.config/hypr/gtk.conf
+|   |   `-- yazi/yazi.toml
+|   +-- .local/share
+|   |   +-- applications/
+|   |   `-- Steam/steamui/skins/
+|   `-- Pictures/Wallpapers/
++-- opt/spicetify-cli
+|   +-- CustomApps/
+|   +-- Extensions/
+|   `-- Themes/
+`-- usr/share
+    +-- fonts/
+    +-- icons/
+    +-- nwg-hello/
+    `-- themes/

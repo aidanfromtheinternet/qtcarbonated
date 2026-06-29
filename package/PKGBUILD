@@ -3,21 +3,24 @@ pkgname=qtcarbonated-shell
 pkgver=1.0.0
 pkgrel=1
 pkgdesc="Qt-based shell for Hyprland, designed for usability."
-arch=('any')
+arch=('x86_64')
 url="https://github.com/aidanfromtheinternet/qtcarbonated"
 license=('MIT')
 depends=(
-    'neovim'
-    'git'
-    'tmux'
-    'htop'
-    'alacritty'
-    'zsh'
+    'gcc-libs'
+    'paru'
 )
-source=('qtc.sh::https://raw.githubusercontent.com/aidanfromtheinternet/qtcarbonated/main/source/mainScript.sh')
+makedepends=('cargo')
 
+source=("${pkgname}::git+https://github.com/aidanfromtheinternet/qtcarbonated.git#branch=main")
 sha256sums=('e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855')
 
+build() {
+    cd "${srcdir}/${pkgname}"
+    cargo build --release --locked
+}
+
 package() {
-    install -Dm755 "${srcdir}/qtc.sh" "${pkgdir}/usr/bin/qtc"
+    cd "${srcdir}/${pkgname}"
+    install -Dm755 "target/release/qtc" "${pkgdir}/usr/bin/qtc"
 }

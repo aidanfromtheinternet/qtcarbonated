@@ -1,4 +1,4 @@
-qtc.sh
+package/qtcarbonated-shell/
 src/
 pkg/
 *.pkg.tar.zst

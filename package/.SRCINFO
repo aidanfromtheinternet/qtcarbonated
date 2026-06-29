@@ -3,15 +3,12 @@ pkgbase = qtcarbonated-shell
 	pkgver = 1.0.0
 	pkgrel = 1
 	url = https://github.com/aidanfromtheinternet/qtcarbonated
-	arch = any
+	arch = x86_64
 	license = MIT
-	depends = neovim
-	depends = git
-	depends = tmux
-	depends = htop
-	depends = alacritty
-	depends = zsh
-	source = qtc.sh::https://raw.githubusercontent.com/aidanfromtheinternet/qtcarbonated/main/source/mainScript.sh
-	sha256sums = e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+	makedepends = cargo
+	depends = gcc-libs
+	depends = paru
+	source = qtcarbonated-shell::git+https://github.com/aidanfromtheinternet/qtcarbonated.git#branch=main
+	sha256sums = SKIP
 
 pkgname = qtcarbonated-shell

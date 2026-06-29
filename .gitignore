@@ -1,0 +1,6 @@
+qtc.sh
+src/
+pkg/
+*.pkg.tar.zst
+*.pkg.tar.gz
+*.log

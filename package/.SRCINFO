@@ -1,0 +1,17 @@
+pkgbase = qtcarbonated-shell
+	pkgdesc = Qt-based shell for Hyprland, designed for usability.
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://github.com/aidanfromtheinternet/qtcarbonated
+	arch = any
+	license = MIT
+	depends = neovim
+	depends = git
+	depends = tmux
+	depends = htop
+	depends = alacritty
+	depends = zsh
+	source = qtc.sh::https://raw.githubusercontent.com/aidanfromtheinternet/qtcarbonated/main/source/mainScript.sh
+	sha256sums = e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+
+pkgname = qtcarbonated-shell

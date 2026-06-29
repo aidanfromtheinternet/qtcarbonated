@@ -14,9 +14,9 @@ depends=(
     'alacritty'
     'zsh'
 )
-source=('qtc.sh::https://raw.githubusercontent.com/aidanfromtheinternet/qtcarbonated/main/src/mainScript.sh')
+source=('qtc.sh::https://raw.githubusercontent.com/aidanfromtheinternet/qtcarbonated/main/source/mainScript.sh')
 
-sha256sums=('SKIP')
+sha256sums=('e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855')
 
 package() {
     install -Dm755 "${srcdir}/qtc.sh" "${pkgdir}/usr/bin/qtc"

@@ -1,6 +1,9 @@
 package/qtcarbonated-shell/
 src/
-pkg/
 *.pkg.tar.zst
 *.pkg.tar.gz
 *.log
+
+# Added by cargo
+
+/target

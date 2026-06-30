@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-cd package/
+cd pkg/
 updpkgsums
 makepkg --printsrcinfo > .SRCINFO
 
